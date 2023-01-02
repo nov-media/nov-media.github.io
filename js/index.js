@@ -20,11 +20,11 @@ var createDomeAt = function( x, z, rPer, r ) {
     r = r === undefined ? 0.5 : r;
     var mesh = new THREE.Mesh(
         // USING A SPHERE GEOMETRY WITH A RADIUS OF 0.5
-        new THREE.SphereGeometry( r, 30, 30, 0, Math.PI * 2, 0, Math.PI * 0.5 ),
+        new THREE.SphereGeometry( r, 64, 64, 0, Math.PI * 2, 0, Math.PI * 0.5 ),
         // standard material
         new THREE.MeshStandardMaterial({
-            color: 0x080808,
-            emissive: 0x404040,
+            color: 0xf0f0f0,
+            emissive: 0x000000,
             side: THREE.DoubleSide
         })
     );
