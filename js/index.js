@@ -25,6 +25,8 @@ var createDomeAt = function( x, z, rPer, r ) {
         new THREE.MeshStandardMaterial({
             color: 0xf0f0f0,
             emissive: 0x000000,
+            roughness: 0,
+            metalness: 0,
             side: THREE.DoubleSide
         })
     );
