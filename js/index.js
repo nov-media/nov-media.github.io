@@ -1,14 +1,19 @@
 const scene = new THREE.Scene();
-scene.add( new THREE.GridHelper( 8, 8, 0xff0000 ) );
-const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-camera.position.set( 1.2, 0.8, 0 );
-camera.lookAt( 0, 0, 0.4 );
+scene.add( new THREE.GridHelper( 256, 256, 0xff0000 ) );
+const camera = new THREE.PerspectiveCamera(
+    75,
+    window.innerWidth / window.innerHeight,
+    0.1,
+    1000
+);
+camera.position.set( 1, 1, 1 ); camera.lookAt( 0, 0, 0 );
 const light = new THREE.PointLight( 0xffffff );
-light.position.set( 1, 1, 0 );
-camera.add( light );
-scene.add( camera );
-const renderer = new THREE.WebGLRenderer();
+light.position.set( 1, 1, 1 );
+camera.add( light ); scene.add( camera );
+
+const renderer = new THREE.WebGLRenderer( { alpha: true, antialias: true } );
 renderer.setSize( window.innerWidth, window.innerHeight );
+renderer.setAnimationLoop( animation );
 document.body.appendChild( renderer.domElement );
 
 var createDomeAt = function( x, z, rPer, r ) {
@@ -18,7 +23,7 @@ var createDomeAt = function( x, z, rPer, r ) {
         new THREE.SphereGeometry( r, 30, 30, 0, Math.PI * 2, 0, Math.PI * 0.5 ),
         // standard material
         new THREE.MeshStandardMaterial({
-            color: 0xff0000,
+            color: 0x080808,
             emissive: 0x404040,
             side: THREE.DoubleSide
         })
@@ -31,9 +36,13 @@ const sphere = createDomeAt( 0, 0, 0.0 )
 scene.add( sphere );
 renderer.render(scene, camera);
 
-function animate() {
-    requestAnimationFrame( animate );
-    sphere.rotation.x += 0.01; sphere.rotation.y += 0.01;
+const offset = new THREE.Vector3();
+const distance = 1;
+function animation( time ) {
+    offset.x = distance * Math.sin( time * 0.0001 );
+    offset.z = distance * Math.cos( time * 0.0001 );
+    offset.y = 1
+    camera.position.copy( sphere.position ).add( offset );
+    camera.lookAt( sphere.position );
     renderer.render( scene, camera );
 }
-animate();
