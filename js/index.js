@@ -38,13 +38,13 @@ const sphere = createDomeAt( 0, 0, 0.0 )
 scene.add( sphere );
 renderer.render(scene, camera);
 
-// const offset = new THREE.Vector3();
-// const distance = 1;
-// function animation( time ) {
-//     offset.x = distance * Math.sin( time * 0.0001 );
-//     offset.z = distance * Math.cos( time * 0.0001 );
-//     offset.y = 1
-//     camera.position.copy( sphere.position ).add( offset );
-//     camera.lookAt( sphere.position );
-//     renderer.render( scene, camera );
-// }
+const offset = new THREE.Vector3();
+const distance = 1;
+function animation( time ) {
+    offset.x = distance * Math.sin( time * 0.0001 );
+    offset.z = distance * Math.cos( time * 0.0001 );
+    offset.y = 1
+    camera.position.copy( sphere.position ).add( offset );
+    camera.lookAt( sphere.position );
+    renderer.render( scene, camera );
+}
