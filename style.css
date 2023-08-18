@@ -1,11 +1,18 @@
-body {
+html, body {
     margin: 0;
+    width: 100%;
+    height: 100%;
 }
-.title {
+.title_box {
+    position: absolute;
     width: 100%;
     height: 100%;
     text-align: center;
+    display: table;
+}
+.title {
     vertical-align: middle;
-    font-size: 100pt;
-    display: inline-block;
+    font-size: 300pt;
+    opacity: 0.05;
+    display: table-cell;
 }
