@@ -12,7 +12,7 @@ html, body {
 }
 .title {
     vertical-align: middle;
-    font-size: 300pt;
+    font-size: 20pt;
     opacity: 0.05;
     display: table-cell;
 }
