@@ -12,7 +12,10 @@ html, body {
 }
 .title {
     vertical-align: middle;
-    font-size: 20pt;
-    opacity: 0.05;
+    font-size: 10pt;
     display: table-cell;
+}
+a {
+    text-decoration-line: none;
+    text-decoration-color: black;
 }
