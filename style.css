@@ -11,12 +11,13 @@ html, body {
     display: table;
 }
 .title {
+    margin: auto;
     vertical-align: middle;
     font-size: 10pt;
     display: table-cell;
 }
 .button {
-    width: 100px;
-    margin: 10px;
+    width: 300px;
+    margin: 15px;
     background-color: aliceblue;
 }
