@@ -9,20 +9,20 @@ html, body {
     text-align: center;
 }
 .title_case {
-    width: 300px;
+    width: 270px;
     height: 100%;
     margin: 0 auto;
     font-size: 10pt;
 }
 .title_cover {
     border: 1px solid #000;
-    width: 298px;
+    width: 268px;
     height: 100%;
     display: table;
 }
 .title {
     border: 1px solid #000;
-    width: 296px;
+    width: 266px;
     vertical-align: middle;
     display: table-cell;
 }
