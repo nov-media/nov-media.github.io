@@ -29,6 +29,7 @@ html, body {
     height: 75px;
     margin: 15px 0px;
     padding: 15px 0px;
+    background-size: contain;
 }
 #youtube {
     background-image: url('youtube.png');
