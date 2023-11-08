@@ -10,8 +10,11 @@ html, body {
     text-align: center;
     display: table;
 }
-.title {
+.title_board {
+    height: 100%;
     margin: auto;
+}
+.title {
     vertical-align: middle;
     font-size: 10pt;
     display: table-cell;
