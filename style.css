@@ -25,11 +25,9 @@ html, body {
     display: table-cell;
 }
 .button {
-    border: 1px solid #000;
-    width: 100%;
+    float: left;
     margin: 15px 0px;
     padding: 15px 0px;
-    background-color: aliceblue;
 }
 #youtube {
     background-image: url('youtube.png');
