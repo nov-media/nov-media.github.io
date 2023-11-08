@@ -31,3 +31,12 @@ html, body {
     padding: 15px 0px;
     background-color: aliceblue;
 }
+#youtube {
+    background-image: url('youtube.png');
+}
+#instagram {
+    background-image: url('instagram.png');
+}
+#wordpress {
+    background-image: url('wordpress.png');
+}
