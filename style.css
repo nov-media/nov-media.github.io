@@ -19,6 +19,7 @@ html, body {
     display: table-cell;
 }
 .button {
+    border: 1px solid #000;
     width: 300px;
     margin: 15px;
     padding: 10px;
