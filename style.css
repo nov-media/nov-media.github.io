@@ -19,5 +19,6 @@ html, body {
 .button {
     width: 300px;
     margin: 15px;
+    padding: 10px;
     background-color: aliceblue;
 }
