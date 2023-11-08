@@ -15,19 +15,21 @@ html, body {
     font-size: 10pt;
 }
 .title_cover {
-    width: 300px;
+    border: 1px solid #000;
+    width: 298px;
     height: 100%;
     display: table;
 }
 .title {
-    width: 300px;
+    border: 1px solid #000;
+    width: 296px;
     vertical-align: middle;
     display: table-cell;
 }
 .button {
     border: 1px solid #000;
     width: 250px;
-    margin: 15px 0px 15px 0px;
-    padding: 15px 0px 15px 0px;
+    margin: 15px 0px;
+    padding: 15px 0px;
     background-color: aliceblue;
 }
