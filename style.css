@@ -30,6 +30,7 @@ html, body {
     margin: 15px 0px;
     padding: 15px 0px;
     background-size: contain;
+    background-repeat: no-repeat;
 }
 #youtube {
     background-image: url('youtube.png');
