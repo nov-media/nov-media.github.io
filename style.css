@@ -46,6 +46,7 @@ html, body {
     width: 100%;
     height: 30px;
     margin: 15px 0px;
+    font-weight: 900;
 }
 #youtube {
     background-image: url('youtube.png');
